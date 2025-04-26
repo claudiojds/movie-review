@@ -6,12 +6,13 @@ type Props = {
   titulo: string;
   genero: string;
   direcao: string;
+  ano: string;
   avaliacao: string;
 };
 
-export default function CardBanner({ src, alt, titulo, genero, direcao, avaliacao}: Props) {
+export default function CardBanner({ src, alt, titulo, genero, direcao, ano,avaliacao}: Props) {
   return (
-    <div className="flex flex-col items-center justify-center h-90 w-60 shadow-md hover:shadow-[rgb(17,16,16,0.75)]">
+    <div className="flex flex-col items-center justify-center h-110 w-60 shadow-md hover:shadow-[rgb(17,16,16,0.75)]">
       <div className="border h-67 w-50 relative">
         <Image 
             src={src} alt={alt} 
@@ -29,8 +30,10 @@ export default function CardBanner({ src, alt, titulo, genero, direcao, avaliaca
       <div className="flex flex-col justify-center items-center">
         <strong className="py-1">{titulo}</strong>
         <div className="flex flex-col w-50">
-        <p>Genero: {genero}</p>
-        <p>Direção: {direcao}</p>
+          <p>Genero: {genero}</p>
+          <p>Direção: {direcao}</p>
+          <p>Ano: {ano}</p>
+          <p>Trailer: <button>Abrir Modal</button></p>
         </div>
       </div>
     </div>

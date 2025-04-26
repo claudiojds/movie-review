@@ -6,9 +6,10 @@ type Props = {
   titulo: string;
   genero: string;
   avaliacao: string;
+  ano: string;
 };
 
-export default function CardMovie({ src, alt, titulo, genero, avaliacao}: Props) {
+export default function CardMovie({ src, alt, titulo, genero, avaliacao,  ano}: Props) {
   return (
     <div className="relative flex flex-col items-center justify-center h-65 w-50">
       <div className="w-full h-full relative">
@@ -29,8 +30,11 @@ export default function CardMovie({ src, alt, titulo, genero, avaliacao}: Props)
         <div className="flex flex-col">
         <p>Genero: {genero}</p>
         <p>Avaliação: {avaliacao}</p>
+        <p>Ano: {ano}</p>
+        <p>Trailer: <button>Abrir Modal</button></p>
         </div>
       </div>
     </div>
   );
 }
+// 
