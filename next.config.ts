@@ -5,7 +5,12 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { hostname: "images-assets.nasa.gov" },
-      { hostname: "cdn.pixabay.com" }
+      { hostname: "cdn.pixabay.com" },
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org',
+        pathname: '/t/p/**',
+      }
     ]
   }
 };
