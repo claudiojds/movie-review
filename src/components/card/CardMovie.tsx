@@ -12,7 +12,7 @@ type Props = {
 export default function CardMovie({ src, alt, titulo, genero, avaliacao,  ano}: Props) {
   return (
     <div className="relative flex flex-col items-center justify-center h-65 w-50">
-      <div className="w-full h-full relative">
+      <div className="w-full h-full relative rounded-lg">
         <Image 
             src={src} alt={alt} 
             layout="fill"
@@ -37,4 +37,3 @@ export default function CardMovie({ src, alt, titulo, genero, avaliacao,  ano}: 
     </div>
   );
 }
-// 

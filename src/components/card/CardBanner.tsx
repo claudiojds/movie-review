@@ -12,7 +12,7 @@ type Props = {
 
 export default function CardBanner({ src, alt, titulo, genero, direcao, ano,avaliacao}: Props) {
   return (
-    <div className="flex flex-col items-center justify-center h-110 w-60 shadow-md hover:shadow-[rgb(17,16,16,0.75)]">
+    <div className="flex flex-col items-center justify-center h-110 w-60 rounded-lg shadow-md hover:shadow-[rgb(17,16,16,0.75)]">
       <div className="border h-67 w-50 relative">
         <Image 
             src={src} alt={alt} 

@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen w-full">
       <header className="flex flex-col items-stretch w-full min-h-36">
         <h1 className={ "flex items-baseline justify-center h-25 text-3xl text-[#CECECE] pt-2"}>
-          Movie review
+          Filmes para assistir
         </h1>
         <div className="flex justify-between pl-5 pr-5 pt-2 pb-2 bg-[rgb(17,16,16,0.75)] h-11">
           <Search/>
