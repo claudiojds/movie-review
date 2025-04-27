@@ -19,7 +19,7 @@ export default function CardBanner({ src, alt, titulo, genero, direcao, ano, ava
           layout="fill"
         />
         <div className="flex flex-col justify-center items-center absolute bottom-0 left-0 w-full bg-gradient-to-b to-zinc-600 h-10">
-          <p>{avaliacao}</p>
+          {/* <p>{avaliacao}</p> */}
         </div>
       </div>
       <div className="flex flex-col justify-center items-center">
