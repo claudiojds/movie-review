@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Search from "@/app/components/inputs/Search";
+import Dropdow from "@/app/components/dropdowm/Dropdowm";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +29,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+              <header className="flex flex-col items-stretch w-full min-h-36">
+                <h1 className={ "flex items-baseline justify-center h-25 text-3xl text-[#CECECE] pt-2"}>
+                  Filmes para assistir
+                </h1>
+                <div className="flex justify-between pl-5 pr-5 pt-2 pb-2 bg-[rgb(17,16,16,0.75)] h-11">
+                  <Search/>
+                  <Dropdow/>
+                </div>
+              </header>
         {children}
       </body>
     </html>
